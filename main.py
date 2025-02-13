@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/wakepc')
 def wakepc():
-    mac_address = "00:1A:2B:3C:4D:5E"  # Replace with your PC’s MAC address
+    mac_address = "64-79-F0-E6-96-68"  # Replace with your PC’s MAC address
     send_magic_packet(mac_address)
     return "PC Wake-on-LAN signal sent!", 200
 
